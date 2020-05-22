@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Pallet Creator - Luciano dii Souza</title>
+    <meta description="Seletor de cores RGB para atividades na primeira semana do BootCamp FullStack IGTI">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+    <div class="content-box">
+        <div class="form-block">
+            <div class="row">
+                <div class="item">
+                    (R) <input type="range" name="r" id="r" class="input-range" min="0" max="255">
+                </div>
+                <input type="text" id="r-value" class="value-box" readonly>
+            </div>
+            <div class="row">
+                <div class="item">
+                    (G) <input type="range" name="g" id="g" class="input-range" min="0" max="255">
+                </div>
+
+                <input type="text" id="g-value" class="value-box" readonly>
+            </div>
+            <div class="row">
+                <div class="item">
+                    (B) <input type="range" name="b" id="b" class="input-range" min="0" max="255">
+                </div>
+                <input type="text" id="b-value" class="value-box" readonly>
+            </div>
+        </div>
+        <div class="resultado">
+            <div class="">
+                <!-- The text field -->
+                <input type="text" value="Escolha uma cor" id="input-valor" class="input-valor" readonly>
+
+                <!-- The button used to copy the text -->
+                <button class="copiar-btn" onclick="valueCopiar()" title="Clique para copiar o valor">Copiar</button>
+            </div>
+
+            <div class="color-block"><img class="copiado" src="" /></div>
+        </div>
+
+    </div>
+
+    <script src="js/color-pallet.js"></script>
+
+</body>
+
+</html>
